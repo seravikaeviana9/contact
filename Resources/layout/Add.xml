@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Contact"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/addname"
+        android:layout_marginTop="25dp"
+        android:hint="Full Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <EditText
+        android:id="@+id/addphone"
+        android:layout_marginTop="15dp"
+        android:hint="Mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <EditText
+        android:id="@+id/addemail"
+        android:layout_marginTop="15dp"
+        android:hint="Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"/>
+        
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Gender"/>
+
+    <RadioGroup
+        android:id="@+id/radiogender"
+        android:layout_marginTop="5dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radiomale"
+            android:text="Male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/radiofemale"
+            android:text="Female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/addnote"
+        android:layout_marginTop="15dp"
+        android:hint="Note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/addcontact"
+            android:hint="Done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:width="60dp"
+            android:height="60dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="#51FF0D"/>
+    </LinearLayout>
+    
+</LinearLayout>
